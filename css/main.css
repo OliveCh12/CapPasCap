@@ -1,0 +1,109 @@
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  background-color: grey;
+  font-family: 'Rubik', sans-serif !important; }
+
+.wrapper {
+  flex-grow: 1;
+  display: flex;
+  background-color: grey; }
+
+@media screen and (max-width: 600px) {
+  .wrapper {
+    flex-direction: column; } }
+header .container {
+  display: flex !important;
+  justify-content: start;
+  align-items: center;
+  height: 70px; }
+
+.logo {
+  animation: spin_7595 20s linear infinite;
+  transform-origin: 50% 50%; }
+
+@keyframes spin_7595 {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(359deg); } }
+@media screen and (max-width: 768px) {
+  header .container {
+    justify-content: center; } }
+footer .container {
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 10pt;
+  color: #DE4313;
+  min-height: 70px; }
+
+.nav-link {
+  color: #DE4313;
+  text-transform: capitalize; }
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #DE4313;
+  opacity: 0.7; }
+
+@media screen and (max-width: 768px) {
+  footer .container {
+    flex-direction: column;
+    padding-top: 15px;
+    padding-bottom: 15px; }
+  footer .footer__links .nav {
+    padding: 10px;
+    flex-direction: column;
+    text-align: center; } }
+.section__card--left {
+  background-image: linear-gradient(0deg, #de4313, rgba(254, 193, 99, 0.3)), url("../img/left.jpg");
+  background-size: cover;
+  flex: auto;
+  width: 50%;
+  position: relative;
+  transition: 0.3s; }
+
+.section__card--right {
+  background-image: linear-gradient(0deg, #f8d800, rgba(254, 193, 99, 0.3)), url("../img/right.jpg");
+  background-size: cover;
+  flex: auto;
+  width: 50%;
+  position: relative;
+  transition: 0.3s; }
+
+.section__card--left:hover {
+  background-image: linear-gradient(0deg, #de4313, rgba(254, 193, 99, 0.7)), url("../img/left.jpg");
+  width: 100%; }
+
+.section__card--right:hover {
+  background-image: linear-gradient(0deg, #f8d800, rgba(254, 193, 99, 0.7)), url("../img/right.jpg");
+  width: 100%; }
+
+.section__card--body {
+  position: absolute;
+  bottom: 30px;
+  left: 30px; }
+  .section__card--body h3 {
+    color: #fff;
+    font-weight: 600; }
+  .section__card--body p {
+    color: #fff;
+    opacity: 0.7; }
+
+@media screen and (max-width: 600px) {
+  .section__card--right {
+    width: 100%; }
+
+  .section__card--left {
+    width: 100%; }
+
+  .section__card--right:hover {
+    height: 100%; }
+
+  .section__card--left:hover {
+    height: 100%; } }
+
+/*# sourceMappingURL=main.css.map */
