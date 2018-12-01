@@ -1,98 +1,109 @@
-/*
-Error: Undefined variable: "$yellow".
-        on line 11 of sass/partials/sections.scss
-        from line 7 of sass/main.scss
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  background-color: grey;
+  font-family: 'Rubik', sans-serif !important; }
 
-6: 
-7: @import "partials/sections.scss";
+.wrapper {
+  flex-grow: 1;
+  display: flex;
+  background-color: grey; }
 
-Backtrace:
-sass/partials/sections.scss:11
-sass/main.scss:7
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/script/tree/variable.rb:49:in `_perform'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/script/tree/node.rb:50:in `perform'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/script/tree/funcall.rb:186:in `perform_arg'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/script/tree/funcall.rb:133:in `block in _perform'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/script/tree/funcall.rb:133:in `each'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/script/tree/funcall.rb:133:in `each_with_index'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/script/tree/funcall.rb:133:in `each'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/script/tree/funcall.rb:133:in `map'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/script/tree/funcall.rb:133:in `_perform'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/script/tree/node.rb:50:in `perform'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/script/tree/funcall.rb:186:in `perform_arg'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/script/tree/funcall.rb:133:in `block in _perform'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/script/tree/funcall.rb:133:in `each'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/script/tree/funcall.rb:133:in `each_with_index'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/script/tree/funcall.rb:133:in `each'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/script/tree/funcall.rb:133:in `map'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/script/tree/funcall.rb:133:in `_perform'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/script/tree/node.rb:50:in `perform'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/script/tree/list_literal.rb:75:in `block in _perform'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/script/tree/list_literal.rb:75:in `map'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/script/tree/list_literal.rb:75:in `_perform'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/script/tree/node.rb:50:in `perform'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `block in with_base'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/stack.rb:135:in `with_frame'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `with_base'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:444:in `map'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `block in with_base'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/stack.rb:135:in `with_frame'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `with_base'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:329:in `block (2 levels) in visit_import'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:329:in `map'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:329:in `block in visit_import'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/stack.rb:88:in `block in with_import'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/stack.rb:135:in `with_frame'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/stack.rb:88:in `with_import'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `block in with_base'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/stack.rb:135:in `with_frame'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `with_base'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:52:in `map'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:161:in `visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:10:in `visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/engine.rb:307:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `each'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:320:in `block in watch'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined variable: \"$yellow\".\A         on line 11 of sass/partials/sections.scss\A         from line 7 of sass/main.scss\A \A 6: \A 7: @import \"partials/sections.scss\";"; }
+@media screen and (max-width: 600px) {
+  .wrapper {
+    flex-direction: column; } }
+header .container {
+  display: flex !important;
+  justify-content: start;
+  align-items: center;
+  height: 70px; }
+
+.logo {
+  animation: spin_7595 20s linear infinite;
+  transform-origin: 50% 50%; }
+
+@keyframes spin_7595 {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(359deg); } }
+@media screen and (max-width: 768px) {
+  header .container {
+    justify-content: center; } }
+footer .container {
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 10pt;
+  color: #FD5C63;
+  min-height: 70px; }
+
+.nav-link {
+  color: #FD5C63;
+  text-transform: capitalize; }
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #FD5C63;
+  opacity: 0.7; }
+
+@media screen and (max-width: 768px) {
+  footer .container {
+    flex-direction: column;
+    padding-top: 15px;
+    padding-bottom: 15px; }
+  footer .footer__links .nav {
+    padding: 10px;
+    flex-direction: column;
+    text-align: center; } }
+.section__card--left {
+  background-image: linear-gradient(0deg, #fd5c63, rgba(254, 193, 99, 0.3)), url("../img/left.jpg");
+  background-size: cover;
+  flex: auto;
+  width: 50%;
+  position: relative;
+  transition: 0.3s; }
+
+.section__card--right {
+  background-image: linear-gradient(0deg, #f8d800, rgba(254, 193, 99, 0.3)), url("../img/right.jpg");
+  background-size: cover;
+  flex: auto;
+  width: 50%;
+  position: relative;
+  transition: 0.3s; }
+
+.section__card--left:hover {
+  background-image: linear-gradient(0deg, #fd5c63, rgba(254, 193, 99, 0.7)), url("../img/left.jpg");
+  width: 100%; }
+
+.section__card--right:hover {
+  background-image: linear-gradient(0deg, #f8d800, rgba(254, 193, 99, 0.7)), url("../img/right.jpg");
+  width: 100%; }
+
+.section__card--body {
+  position: absolute;
+  bottom: 30px;
+  left: 30px; }
+  .section__card--body h3 {
+    color: #fff;
+    font-weight: 600; }
+  .section__card--body p {
+    color: #fff;
+    opacity: 0.7; }
+
+@media screen and (max-width: 600px) {
+  .section__card--right {
+    width: 100%; }
+
+  .section__card--left {
+    width: 100%; }
+
+  .section__card--right:hover {
+    height: 100%; }
+
+  .section__card--left:hover {
+    height: 100%; } }
+
+/*# sourceMappingURL=main.css.map */
