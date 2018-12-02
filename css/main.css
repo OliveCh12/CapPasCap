@@ -1,3 +1,11 @@
+.modal-content {
+  border: none !important;
+  border-radius: 0px !important; }
+
+.modal-body {
+  color: black;
+  opacity: 0.8; }
+
 body {
   display: flex;
   flex-direction: column;
@@ -104,6 +112,19 @@ footer .container {
     height: 100%; }
 
   .section__card--left:hover {
-    height: 100%; } }
+    height: 100%; }
+
+  .section__card--body {
+    position: absolute;
+    bottom: 15px;
+    left: 15px; }
+    .section__card--body h3 {
+      color: #fff;
+      font-weight: 600;
+      font-size: 18pt; }
+    .section__card--body p {
+      color: #fff;
+      opacity: 0.7;
+      font-size: 10pt; } }
 
 /*# sourceMappingURL=main.css.map */
