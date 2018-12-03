@@ -5,6 +5,6 @@ Cap'Pas'Cap est une plateforme de recrutement visant à accompagner et améliore
 
 ## Arborescence Web
 
-- Landing Page
-    - Page d'Accueil
-    - Plateforme de recrutement
+- [Landing Page](https://olivech12.github.io/CapPasCap/)
+    - [Plateforme de recrutement (Home)](https://olivech12.github.io/CapPasCap/home.html)
+    - [Plateforme de recrutement (Forms)](https://olivech12.github.io/CapPasCap/home.html)
