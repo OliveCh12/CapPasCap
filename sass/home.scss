@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background-image: linear-gradient(0deg, rgba($primary, 1), rgba($secondary, 0.7)), url("../img/hero.jpg");
+    background-image: linear-gradient(0deg, rgba($primary, 1), rgba($primary, 0.5)), url("../img/hero.jpg");
     background-size: cover;
 }
 
@@ -93,9 +93,11 @@ section {
         height: 600px;
         object-fit: cover;
     }
+
     .section__text {
         margin-top: 2rem;
-            strong{
+
+        strong {
             font-weight: 600;
             color: $primary;
             padding: 1rem;
@@ -168,20 +170,23 @@ footer {
     color: $white;
     padding-top: 60px;
     padding-bottom: 60px;
+
     .container {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
 
-        h3{
+        h3 {
             font-weight: bolder
         }
+
         .form-control {
             color: $primary;
             border: 1px solid $white;
             caret-color: $primary;
         }
+
         .form-control:focus {
             color: $primary;
             box-shadow: none;
